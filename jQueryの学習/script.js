@@ -1,0 +1,3 @@
+$(function(){
+    $(".aa .bb").fadeOut();
+});
