@@ -1,5 +1,4 @@
-
-public class Mp3player {
+public class Mp3Player {
 	public void play(){
 		System.out.println("再生");
 	}
@@ -7,10 +6,9 @@ public class Mp3player {
 		System.out.println("停止");
 	}
 	public void next(){
-		System.out.println("次へ");
+		System.out.println("進む");
 	}
 	public void back(){
 		System.out.println("戻る");
 	}
-
 }

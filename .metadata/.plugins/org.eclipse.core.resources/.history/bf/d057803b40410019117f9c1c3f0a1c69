@@ -1,0 +1,33 @@
+package com.internousdev.ecsite.dto;
+
+public class BuyItemDTO {
+	private String id;
+	private String ItemName;
+	private String ItemPrice;
+	private boolean loginFlg = false;
+	public String getId() {
+		return id;
+	}
+	public String getItemName() {
+		return ItemName;
+	}
+	public String getItemPrice() {
+		return ItemPrice;
+	}
+	public boolean isLoginFlg() {
+		return loginFlg;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public void setItemName(String itemName) {
+		ItemName = itemName;
+	}
+	public void setItemPrice(String itemPrice) {
+		ItemPrice = itemPrice;
+	}
+	public void setLoginFlg(boolean loginFlg) {
+		this.loginFlg = loginFlg;
+	}
+
+}

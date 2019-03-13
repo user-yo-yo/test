@@ -1,10 +1,8 @@
-
 public class Person {
-	public String name = "nu11";
-	public int age = 0;
+	private String name = null;
+	private int age = 0;
 
-
-	public Person (String name,int age){
+	public Person(String name , int age){
 		this.name = name;
 		this.age = age;
 	}
@@ -12,15 +10,13 @@ public class Person {
 	public String getName(){
 		return this.name;
 	}
-
 	public void setName(String name){
 		this.name = name;
 	}
-	
+
 	public int getAge(){
 		return this.age;
-		}
-
+	}
 	public void setAge(int age){
 		this.age = age;
 	}

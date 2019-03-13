@@ -1,0 +1,42 @@
+package com.internousdev.ecsite.action;
+
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemCreateConfirmAction extends ActionSupport implements SessionAware{
+	private String addedItem;
+	public Map<String,Object> session;
+	private String errorMessage;
+
+	public String execute(){
+		String result = SUCCESS;
+
+		if(!(addedItem.equals(""))){
+			session.put("addedItem",addedItem);
+		}else{
+			setErrorMessage("未入力です。")
+			result = ERROR;
+		}
+		return result;
+	}
+
+	public String getAddedItem() {
+		return addedItem;
+	}
+
+	public String getErrorMessage() {
+		return errorMessage;
+	}
+
+	public void setAddedItem(String addedItem) {
+		this.addedItem = addedItem;
+	}
+
+	public void setErrorMessage(String errorMessage) {
+		this.errorMessage = errorMessage;
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.internousdev.ecsite.dto;
+
+public class BuyItemDTO {
+	private String id;
+	private String buyItemName;
+	private String buyItemPrice;
+	private boolean loginFlg = false;
+
+
+}

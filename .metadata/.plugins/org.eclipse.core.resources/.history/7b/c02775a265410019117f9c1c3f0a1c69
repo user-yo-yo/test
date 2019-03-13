@@ -1,0 +1,7 @@
+package com.internousdev.ecsite.dto;
+
+public class UserCreateCompleteDTO {
+	private String loginUserId;
+	private String loginUserPassword;
+	private String userName;
+}

@@ -1,0 +1,15 @@
+public class Iphone {
+	public static void main(String[] args){
+		SmartPhone iphone = new SmartPhone();
+
+		System.out.println("We Are Apple");
+		iphone.play();
+		iphone.stop();
+		iphone.next();
+		iphone.back();
+		iphone.call();
+		iphone.mail();
+		iphone.photo();
+		iphone.internet();
+	}
+}

@@ -1,0 +1,11 @@
+
+public class Test {
+	public static void main(String[] args){
+		Person taro = new Person();
+		taro.name="あああ";
+		taro.age=30+1;
+
+		System.out.println(taro.name);
+		System.out.println(taro.age);
+	}
+}

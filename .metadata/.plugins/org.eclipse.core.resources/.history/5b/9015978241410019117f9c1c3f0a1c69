@@ -1,0 +1,7 @@
+package com.internousdev.ecsite.dto;
+
+public class LoginDTO {
+	private String login_id;
+	private String login_pass;
+	private String user_name;
+}
