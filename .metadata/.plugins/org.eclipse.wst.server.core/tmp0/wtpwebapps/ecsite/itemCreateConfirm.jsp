@@ -90,7 +90,7 @@ table{
 							<label>個数:</label>
 						</td>
 						<td>
-							<s:property value="itemKo" escape="false" />
+							<s:property value="itemZaiko" escape="false" />
 						</td>
 						<td>
 						個
@@ -101,7 +101,7 @@ table{
 							<label>値段:</label>
 						</td>
 						<td>
-							<s:property value="itemEn" escape="false" />
+							<s:property value="itemKakaku" escape="false" />
 						</td>
 						<td>
 						円

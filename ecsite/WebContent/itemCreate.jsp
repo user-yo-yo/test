@@ -90,7 +90,7 @@ table{
 							<label>個数:</label>
 						</td>
 						<td>
-							<input type="text" name="ItemKo" value="" />
+							<input type="text" name="ItemZaiko" value="" />
 						</td>
 						<td>
 							個
@@ -101,7 +101,7 @@ table{
 							<label>値段:</label>
 						</td>
 						<td>
-							<input type="text" name="ItemEn" value="" />
+							<input type="text" name="ItemKakaku" value="" />
 						</td>
 						<td>
 							円

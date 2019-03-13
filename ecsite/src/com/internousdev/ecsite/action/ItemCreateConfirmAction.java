@@ -8,21 +8,23 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class ItemCreateConfirmAction extends ActionSupport implements SessionAware {
 	private String addItem;
-	private int itemKo;
-	private int itemEn;
-	public Map<String, Object> session;
+	private String itemZaiko;
+	private String itemKakaku;
+	public Map<String,Object> session;
 	private String errorMessage;
 
-	public String execute() {
+	public String execute(){
 		String result = SUCCESS;
 
-		if (!(addItem.equals(""))
-				&& !(itemKo==(""))
-				&& !(itemEn==(""))) {
-			session.put("addItem", addItem);
-		} else {
-			setErrorMessage("未入力です。");
-			result = ERROR;
+		if(!(addItem.equals(""))
+			&& !(itemZaiko.equals(""))
+			&& !(itemKakaku.equals(""))){
+				session.put("addItem",addItem);
+				session.put("itemZaiko",itemZaiko);
+				session.put("itemKakaku",itemKakaku);
+		}else{
+				setErrorMessage("未入力の項目があります。");
+				result = ERROR;
 		}
 		return result;
 	}
@@ -31,40 +33,34 @@ public class ItemCreateConfirmAction extends ActionSupport implements SessionAwa
 		return addItem;
 	}
 
-	public Map<String, Object> getSession() {
-		return session;
-	}
-
-	public String getErrorMessage() {
-		return errorMessage;
-	}
-
 	public void setAddItem(String addItem) {
 		this.addItem = addItem;
 	}
 
-	public void setSession(Map<String, Object> session) {
+	public String getItemZaiko() {
+		return itemZaiko;
+	}
+
+	public void setItemZaiko(String itemZaiko) {
+		this.itemZaiko = itemZaiko;
+	}
+
+	public String getItemKakaku() {
+		return itemKakaku;
+	}
+
+	public void setItemKakaku(String itemKakaku) {
+		this.itemKakaku = itemKakaku;
+	}
+	@Override
+	public void setSession(Map<String,Object> session){
 		this.session = session;
 	}
 
-	public void setErrorMessage(String errorMessage) {
+	public String getErrorMessage(){
+		return errorMessage;
+	}
+	public void setErrorMessage(String errorMessage){
 		this.errorMessage = errorMessage;
 	}
-
-	public int getItemKo() {
-		return itemKo;
-	}
-
-	public int getItemEn() {
-		return itemEn;
-	}
-
-	public void setItemKo(int itemKo) {
-		this.itemKo = itemKo;
-	}
-
-	public void setItemEn(int itemEn) {
-		this.itemEn = itemEn;
-	}
-
 }

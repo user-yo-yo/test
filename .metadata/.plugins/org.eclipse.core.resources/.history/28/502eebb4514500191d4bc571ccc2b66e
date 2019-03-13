@@ -1,0 +1,53 @@
+package com.internousdev.ecsite.action;
+
+import java.util.Map;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemCreateAction extends ActionSupport{
+	public Map<String,Object> session;
+	private String addItem;
+	private int itemZaiko;
+	private int itemKakaku;
+
+	public String execute(){
+		String result = SUCCESS;
+
+		session.put("addItem",addItem),
+//		int intitemZaiko =
+		Integer.parseInt(session.get("itemZaiko").toString(),
+//		int intitemKakaku =
+		Integer.parseInt(session.get("itemKakaku").toString());
+
+		return result;
+	}
+
+	public String getAddItem() {
+		return addItem;
+	}
+
+	public int getItemZaiko() {
+		return itemZaiko;
+	}
+
+	public int getItemKakaku() {
+		return itemKakaku;
+	}
+
+	public void setAddItem(String addItem) {
+		this.addItem = addItem;
+	}
+
+	public void setItemZaiko(int itemZaiko) {
+		this.itemZaiko = itemZaiko;
+	}
+
+	public void setItemKakaku(int itemKakaku) {
+		this.itemKakaku = itemKakaku;
+	}
+
+	public void setSession(Map<String,Object> session){
+		this.session = session;
+	}
+
+}

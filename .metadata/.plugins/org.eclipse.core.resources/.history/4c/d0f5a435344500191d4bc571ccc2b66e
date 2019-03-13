@@ -1,0 +1,15 @@
+package com.internousdev.ecsite.action;
+
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemCreateCompleteAction extends ActionSupport implements SessionAware{
+	private String addItem;
+	private int itemKo;
+	private int itemEn;
+	public Map<String, Object> session;
+	private String errorMessage;
+}
