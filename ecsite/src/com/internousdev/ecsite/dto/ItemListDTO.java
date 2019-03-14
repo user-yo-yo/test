@@ -1,27 +1,26 @@
 package com.internousdev.ecsite.dto;
 
 public class ItemListDTO {
-	public String itemName;
-	public String ItemStocks;
-	public String ItemPrice;
+	private String itemName;
+	private int itemStock;
+	private int itemPrice;
+
 	public String getItemName() {
 		return itemName;
 	}
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-	public String getItemStocks() {
-		return ItemStocks;
+	public int getItemStock() {
+		return itemStock;
 	}
-	public void setItemStocks(String itemStocks) {
-		ItemStocks = itemStocks;
+	public void setItemStock(int itemStock) {
+		this.itemStock = itemStock;
 	}
-	public String getItemPrice() {
-		return ItemPrice;
+	public int getItemPrice() {
+		return itemPrice;
 	}
-	public void setItemPrice(String itemPrice) {
-		ItemPrice = itemPrice;
+	public void setItemPrice(int itemPrice) {
+		this.itemPrice = itemPrice;
 	}
-
-
 }

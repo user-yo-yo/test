@@ -1,0 +1,6 @@
+package com.internousdev.ecsite.dto;
+
+public class ItemListDTO {
+	private String itemName;
+	private int item
+}

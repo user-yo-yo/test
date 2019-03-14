@@ -82,6 +82,9 @@ table{
 			<s:form action="UserCreateAction">
 				<s:submit value="新規登録" />
 			</s:form>
+			<s:form action="UserListAction">
+				<s:submit value="ユーザー一覧" />
+			</s:form>
 			</div>
 			<div id="text-link">
 				<p>Homeへ戻る場合は

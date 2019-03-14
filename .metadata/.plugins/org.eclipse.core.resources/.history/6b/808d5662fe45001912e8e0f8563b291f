@@ -1,0 +1,11 @@
+package com.internousdev.ecsite.dao;
+
+import java.util.ArrayList;
+
+import com.internousdev.ecsite.dto.ItemListDTO;
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
+public class ItemListDAO {
+	java.util.List<ItemListDTO> itemListDTOList = new ArrayList<ItemListDTO>();
+
+}

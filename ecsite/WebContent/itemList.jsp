@@ -75,40 +75,23 @@ table{
 			<p>ItemList</p>
 		</div>
 		<div>
-			<s:if test="itemList == null">
-				<h3>商品はありません。</h3>
-			</s:if>
-			<s:elseif test="message == bull">
-				<h3>商品情報は以下の通りです。</h3>
-				<table border="1">
+			<table border="1">
+				<tr>
+					<th>商品名</th>
+					<th>在庫数</th>
+					<th>値段</th>
+				</tr>
+				<s:iterator value="#session.itemListDTOList">
 					<tr>
-						<th>商品名</th>
-						<th>在庫数</th>
-						<th>価格</th>
+						<td><s:property value="itemName"/></td>
+						<td><s:property value="itemStock"/>個</td>
+						<td><s:property value="itemPrice"/>円</td>
 					</tr>
-					<s:iterator value="itemList">
-						<tr>
-							<td><s:property value="item_Name"/></td>
-							<td><s:property value="item_stock"/>
-								<span>個</span>
-							</td>
-							<td><s:property value="item_price"/>
-								<span>円</span>
-							</td>
-						</tr>
-					</s:iterator>
+				</s:iterator>
 				</table>
-				<s:form action="ItemListAction">
-					<input type="hidden" name="deleteFlg" value="1">
-					<s:submit value="削除" method="delete" />
+				<s:form action="ItemListDeleteConfirmAction">
+					<s:submit value="削除" />
 				</s:form>
-			</s:elseif>
-			<s:if test="message != bull">
-				<h3><s:property value="message" /></h3>
-			</s:if>
-			<div id="text-right">
-				<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
-			</div>
 		</div>
 	</div>
 

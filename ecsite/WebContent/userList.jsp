@@ -75,7 +75,21 @@ table{
 			<p>UserList</p>
 		</div>
 		<div>
-			<p>人々</p>
+			<table border="1">
+				<tr>
+					<th>ユーザーID</th>
+					<th>ユーザー名</th>
+				</tr>
+					<s:iterator value="#session.userListDTOList">
+						<tr>
+							<td><s:property value="userId"/></td>
+							<td><s:property value="userName"/></td>
+						</tr>
+					</s:iterator>
+				</table>
+				<s:form action="UserListDeleteConfirmAction">
+					<s:submit value="削除" />
+				</s:form>
 		</div>
 	</div>
 

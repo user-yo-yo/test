@@ -1,0 +1,26 @@
+package com.internousdev.ecsite.action;
+
+import java.sql.SQLException;
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.internousdev.ecsite.dao.ItemListDeleteCompleteDAO;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemListDeleteCompleteAction extends ActionSupport implements SessionAware{
+	public Map<String,Object> session;
+	private ItemListDeleteCompleteDAO iLDCDAO = new ItemListDeleteCompleteDAO();
+	private String deleteFlg;
+	private String message;
+
+	public String execute() throws SQLException{
+		if(!session.containsKey("item")){
+			return ERROR;
+		}
+		if(deleteFlg==null){
+			String item_info_transaction = session.get("item").toString();
+			createItemList = ItemListDeleteCompleteDAO.getCreateItemListYo(item_info_transaction);
+		}
+	}
+}
