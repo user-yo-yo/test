@@ -21,26 +21,14 @@ public class ItemCreateAction extends ActionSupport implements SessionAware{
 
 		return result;
 	}
-//
-//	public String getAddItem() {
-//		return addItem;
-//	}
 
 	public void setAddItem(String addItem) {
 		this.addItem = addItem;
 	}
-//
-//	public int getItemZaiko() {
-//		return itemZaiko;
-//	}
 
 	public void setItemZaiko(int itemZaiko) {
 		this.itemZaiko = itemZaiko;
 	}
-
-//	public int getItemKakaku() {
-//		return itemKakaku;
-//	}
 
 	public void setItemKakaku(int itemKakaku) {
 		this.itemKakaku = itemKakaku;
