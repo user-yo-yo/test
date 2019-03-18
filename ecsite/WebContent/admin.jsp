@@ -61,6 +61,20 @@ table{
 	text-align:center;
 }
 
+#shohin {
+	float: left;
+	padding-right: 50px;
+	display:inline-block;
+	text-align:center;
+}
+
+#user{
+	float: right;
+	padding-left: 50px;
+	display:inline-block;
+	text-align:center;
+}
+
 </style>
 
 </head>
@@ -72,20 +86,28 @@ table{
 	<div id="main">
 		<div id="top">
 			<p>Admin</p>
-			<div id="text-center">
-			<s:form action="ItemCreateAction">
-				<s:submit value="商品登録" />
-			</s:form>
-			<s:form action="ItemListAction">
-				<s:submit value="商品一覧" />
-			</s:form>
-			<s:form action="UserCreateAction">
-				<s:submit value="新規登録" />
-			</s:form>
-			<s:form action="UserListAction">
-				<s:submit value="ユーザー一覧" />
-			</s:form>
-			</div>
+
+				<div id="text-center">
+				<div id="shohin">
+				<h2>商品</h2>
+					<s:form action="ItemCreateAction">
+						<s:submit value="商品登録" />
+					</s:form>
+					<s:form action="ItemListAction">
+						<s:submit value="商品一覧" />
+					</s:form>
+				</div>
+				<div id="user">
+				<h2>ユーザー</h2>
+					<s:form action="UserCreateAction">
+						<s:submit value="新規登録" />
+					</s:form>
+					<s:form action="UserListAction">
+						<s:submit value="ユーザー一覧" />
+					</s:form>
+				</div>
+				</div>
+
 			<div id="text-link">
 				<p>Homeへ戻る場合は
 					<a href='<s:url action="GoHomeAction" />'>こちら</a>

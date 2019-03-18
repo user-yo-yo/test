@@ -1,0 +1,10 @@
+package com.internousdev.ecsite.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class PreAdminAction extends ActionSupport{
+	if(login_id == "internous"){
+		String result = SUCCESS;
+	}
+}
+}

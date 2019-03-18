@@ -42,7 +42,7 @@ public class ItemListDeleteCompleteDAO {
 	}
 
 	public int createItemHistoryDelete() throws SQLException {
-		String sql = "DELETE FROM item_info_transaction ";
+		String sql = "DELETE FROM item_info_transaction WHERE id=1";
 
 		PreparedStatement preparedStatement;
 		int result = 0;

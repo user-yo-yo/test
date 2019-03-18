@@ -17,7 +17,7 @@ public class UserListDeleteCompleteAction extends ActionSupport implements Sessi
 	private String message;
 
 	public String execute() throws SQLException{
-		int aa = uDAO.createUserHistosryDeleto();
+		int aa = uDAO.createUserHistoryDelete();
 		if(aa>0){
 			userList = null;
 			setMessage("人間は消えた。");

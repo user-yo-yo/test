@@ -90,6 +90,9 @@ table{
 				<s:form action="UserListDeleteConfirmAction">
 					<s:submit value="削除" />
 				</s:form>
+				<div>
+			<a href='<s:url action="GoAdminAction" />'>管理者TOPへ</a>
+		</div>
 		</div>
 	</div>
 

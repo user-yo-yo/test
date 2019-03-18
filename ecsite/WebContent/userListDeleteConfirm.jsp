@@ -10,6 +10,7 @@
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <title>UserListDeleteConfirm画面</title>
 
 <style type="text/css">
@@ -62,6 +63,12 @@ table{
 }
 
 </style>
+<script type="text/javascript">
+	function submitAction(url){
+		$('form').attr('action',url);
+		$('form').submit();
+	}
+</script>
 
 </head>
 <body>
@@ -79,7 +86,7 @@ table{
 			<s:form>
 			<tr>
 				<td><input type="button" value="OK" onclick="submitAction('UserListDeleteCompleteAction')"/></td>
-				<td><input type="button" value="NO" onclick="submitAction('ItemListAction')"/></td>
+				<td><input type="button" value="NO" onclick="submitAction('UserListAction')"/></td>
 			</tr>
 			</s:form>
 		</div>

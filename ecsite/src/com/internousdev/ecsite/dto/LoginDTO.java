@@ -4,6 +4,7 @@ public class LoginDTO {
 	private String loginId;
 	private String loginPassword;
 	private String userName;
+	private String adminFlg;
 	private boolean loginFlg = false;
 
 	public String getLoginId() {
@@ -29,6 +30,12 @@ public class LoginDTO {
 	}
 	public void setLoginFlg(boolean loginFlg) {
 		this.loginFlg = loginFlg;
+	}
+	public String getAdminFlg() {
+		return adminFlg;
+	}
+	public void setAdminFlg(String adminFlg) {
+		this.adminFlg = adminFlg;
 	}
 
 }

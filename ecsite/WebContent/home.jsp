@@ -82,10 +82,10 @@ table{
 				<a href='<s:url action="LogoutAction" />'>こちら</a>
 				</p>
 			</s:if>
-			<p><br></p>
-			<s:form action="AdminAction">
-				<s:submit value="管理者" />
-			</s:form>
+<!-- 			<p><br></p> -->
+<%-- 			<s:form action="AdminAction"> --%>
+<%-- 				<s:submit value="管理者" /> --%>
+<%-- 			</s:form> --%>
 		</div>
 	</div>
 	<div id="footer">

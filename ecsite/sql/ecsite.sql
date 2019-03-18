@@ -12,6 +12,7 @@ id int not null primary key auto_increment,
 login_id varchar(16) unique,
 login_pass varchar(16),
 user_name varchar(50),
+admin_flg varchar(1),
 insert_date datetime,
 updated_date datetime
 );
@@ -41,4 +42,5 @@ dalete_date datetime
 );
 
 INSERT INTO item_info_transaction(item_name,item_price,item_stock)VALUES("ノートBOOK",100,50);
-INSERT INTO login_user_transaction(login_id,login_pass,user_name)VALUES("internous","internous01","test");
+INSERT INTO login_user_transaction(login_id,login_pass,user_name,admin_flg)VALUES("manager","111","mngr","0");
+INSERT INTO login_user_transaction(login_id,login_pass,user_name,admin_flg)VALUES("a","1","aaa","1");
