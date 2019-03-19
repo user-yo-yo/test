@@ -112,7 +112,7 @@ table {
 							<span>支払方法</span>
 						</td>
 						<td>
-							<input type="radio" name="pay" value="1" checked="checked">現ナマ
+							<input type="radio" name="pay" value="1" checked="checked">現金
 							<input type="radio" name="pay" value="2">クレジットカード
 						</td>
 					</tr>

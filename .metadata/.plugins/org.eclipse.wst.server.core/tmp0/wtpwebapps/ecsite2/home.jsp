@@ -73,11 +73,11 @@ table {
 		</div>
 		<div id="text-center">
 			<s:form action="HomeAction">
-				<s:submit value="商品購入" />
+				<s:submit value="Product purchase" />
 			</s:form>
 			<s:if test="#session.id != null">
 				<p>
-					ログアウトする場合は <a href='<s:url action="LogoutAction" />'>こちら</a>
+					If you wanna logout <a href='<s:url action="LogoutAction" />'>click here</a>
 				</p>
 			</s:if>
 		</div>

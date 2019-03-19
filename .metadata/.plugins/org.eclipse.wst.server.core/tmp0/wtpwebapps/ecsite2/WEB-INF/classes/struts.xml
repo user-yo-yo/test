@@ -30,5 +30,31 @@
 		<result name="success">home.jsp</result>
 	</action>
 
+	<!-- UserCreateAction -->
+	<action name="UserCreateAction" class="com.internousdev.ecsite2.action.UserCreateAction" method="execute">
+		<result name="success">userCreate.jsp</result>
+	</action>
+
+	<!-- UserCreateConfirmAction -->
+	<action name="UserCreateConfirmAction" class="com.internousdev.ecsite2.action.UserCreateConfirmAction" method="execute">
+		<result name="success">userCreateConfirm.jsp</result>
+		<result name="error">userCreate.jsp</result>
+	</action>
+
+	<!-- UserCreateCompleteAction -->
+	<action name="UserCreateCompleteAction" class="com.internousdev.ecsite2.action.UserCreateCompleteAction" method="execute">
+		<result name="success">userCreateComplete.jsp</result>
+	</action>
+
+	<!-- BuyItemAction -->
+	<action name="BuyItemAction" class="com.internousdev.ecsite2.action.BuyItemAction" method="execute">
+		<result name="success">buyItemConfirm.jsp</result>
+	</action>
+
+	<!-- BuyItemConfirmAction -->
+	<action name="BuyItemConfirmAction" class="com.internousdev.ecsite2.action.BuyItemConfirmAction" method="execute">
+		<result name="success">buyItemComplete.jsp</result>
+	</action>
+
 	</package>
 </struts>

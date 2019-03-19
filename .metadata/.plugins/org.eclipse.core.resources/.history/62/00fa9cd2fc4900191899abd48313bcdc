@@ -1,0 +1,8 @@
+package jp.co.internous.action;
+
+public class TryBun {
+	int n[] = {18,29,36};
+	System.out.println("開始します");
+
+
+}

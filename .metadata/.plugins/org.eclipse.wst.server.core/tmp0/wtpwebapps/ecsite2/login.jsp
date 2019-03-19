@@ -73,7 +73,7 @@ table {
 			<p>LOGIN</p>
 		</div>
 		<div>
-			<h3>商品を購入する際にはログインをお願いします。</h3>
+			<h3>Please log in when you purchase the product.</h3>
 			<s:form action="LoginAction">
 				<s:textfield name="loginUserId" />
 				<s:password name="loginPassword" />
@@ -82,7 +82,7 @@ table {
 			<br />
 			<div id="text-link">
 				<p>
-				<a href='<s:url action="UserCreateAction" />'>新規ユーザー登録</a>
+				<a href='<s:url action="UserCreateAction" />'>Create New User</a>
 				</p>
 				<p>
 				<a href='<s:url action="GoHomeAction" />'>Home</a>

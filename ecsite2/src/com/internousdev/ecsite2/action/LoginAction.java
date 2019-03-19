@@ -23,6 +23,8 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		liDTO = liDAO.getLoginUserInfo(loginUserId,loginPassword);
 		session.put("loginUser",liDTO);
 
+//	入力値からユーザー情報の検索を実行。
+//	成功した場合、「商品情報」が必要になるためそれを取得する。
 		if(((LoginDTO)session.get("loginUser")).getLoginFlg()){
 			rs = SUCCESS;
 			BuyItemDTO biDTO = biDAO.getBuyItemInfo();
