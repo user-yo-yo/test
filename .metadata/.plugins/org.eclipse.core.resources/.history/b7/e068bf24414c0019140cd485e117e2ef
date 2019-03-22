@@ -1,0 +1,5 @@
+package com.internousdev.temp.util;
+
+public class DBConnector {
+
+}

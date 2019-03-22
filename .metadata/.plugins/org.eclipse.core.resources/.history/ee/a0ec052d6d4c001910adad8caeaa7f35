@@ -1,0 +1,14 @@
+package jp.co.internous.action;
+
+public class ChangeToStringAction {
+	public static void main(String[] args) throws Exception {
+
+		//int型を宣言
+		int num = 2;
+
+        //intからStringへの変換
+        String str = String.valueOf(num);
+
+        System.out.println("str = " + str);
+    }
+}
