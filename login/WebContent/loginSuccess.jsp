@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ログイン成功</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>ログイン成功</h1>
+	<h1>成功</h1>
 </body>
 </html>

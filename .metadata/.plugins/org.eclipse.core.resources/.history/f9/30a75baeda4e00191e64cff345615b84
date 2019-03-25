@@ -1,0 +1,34 @@
+package com.internousdev.ecsite2.action;
+
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.internousdev.ecsite2.dao.ItemListDAO;
+import com.internousdev.ecsite2.dto.ItemListDTO;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemListAction extends ActionSupport implements SessionAware{
+	public Map<String,Object> session;
+
+	public String execute(){
+		String result = "list";
+
+	if(session.containsKey("itemName")){
+		ItemListDAO iLDAO = new ItemListDAO();
+		ItemListDTO iLDTO = new ItemListDTO();
+		session.put("itemName",iLDTO.getItemName());
+		session.put("itemPrice",iLDTO.getItemPrice());
+		session.put("itemStock",iLDTO.getItemStock());
+		result = SUCCESS;
+	}
+	return result;
+	}
+	@Override
+	public void setSession(Map<String,Object> session){
+		this.session = session;
+	}
+	public Map<String,Object> getSession(){
+		return this.session;
+	}
+}

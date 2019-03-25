@@ -1,0 +1,17 @@
+set names utf8;
+set foreign_key_checks = 0;
+
+drop database if exists logindb_o;
+create datebase logindb_o;
+user logindb_o;
+
+create table u(
+	id int;
+	user_name varchar(255);
+	password varchar(255)
+);
+
+insert into u values
+(1,"a","1234567"),
+(2,"dfsg","76543").
+(3,"5fdgd","46");

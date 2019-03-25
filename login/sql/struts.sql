@@ -1,8 +1,9 @@
 set names utf8;
 set foreign_key_checks = 0;
-drop database if exists logindb_john;
-create database logindb_john;
-use logindb_john;
+
+drop database if exists logindb_o;
+create database logindb_o;
+use logindb_o;
 
 create table user(
 	id int,
@@ -11,7 +12,6 @@ create table user(
 );
 
 insert into user values
-(1,"a","123"),
-(2,"b","234"),
-(3,"c","345"),
-(4,"d","456");
+(1,"a","567"),
+(2,"dsg","763"),
+(3,"5gd","46");
