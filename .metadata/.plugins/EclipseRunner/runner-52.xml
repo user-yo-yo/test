@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <runner version="1.0.0">
 <category name="カテゴリーなし">
+<launchConfiguration bookmark="false" name="AboutReturn"/>
+<launchConfiguration bookmark="false" name="AboutReturn2"/>
 <launchConfiguration bookmark="false" name="Android"/>
 <launchConfiguration bookmark="false" name="Capsule"/>
 <launchConfiguration bookmark="false" name="ChangeToIntAction"/>
@@ -26,7 +28,7 @@
 <launchConfiguration bookmark="false" name="TryBun"/>
 <launchConfiguration bookmark="false" name="WebProject2 (1)"/>
 <launchConfiguration bookmark="false" name="WrapperAction"/>
-<launchConfiguration bookmark="false" name="ecsite2"/>
+<launchConfiguration bookmark="false" name="_home.jsp"/>
 <launchConfiguration bookmark="false" name="ローカル・ホスト の Tomcat8 (Java8)"/>
 </category>
 </runner>

@@ -73,9 +73,9 @@ table {
 			<p>BuyItemComplete</p>
 		</div>
 		<div>
-			<p>購入手続完了</p>
+			<p>購入手続が完了しました</p>
 			<div>
-				<a href='<s:url action="MyPageAction" />'>MyPage</a><span>履歴確認可能</span>
+				<a href='<s:url action="MyPageAction" />'>MyPage</a>
 				<a href='<s:url action="GoHomeAction" />'>Home</a>
 			</div>
 		</div>

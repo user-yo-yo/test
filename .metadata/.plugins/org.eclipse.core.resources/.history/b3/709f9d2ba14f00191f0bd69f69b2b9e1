@@ -1,0 +1,11 @@
+package jp.co.internous.action;
+
+public class Zatsu {
+	public static void main(String[] args) {
+        String methodName = new Object(){}.getClass().getEnclosingMethod().getName();
+        System.out.println("実行中のクラスから取得したメソッド名 : " + methodName);
+
+        methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
+        System.out.println("スタックトレースから取得したメソッド名 : " + methodName);
+    }
+}

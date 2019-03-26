@@ -1,0 +1,7 @@
+package com.internousdev.ecsite2.dto;
+
+public class ItemListDTO {
+	public String itemName;
+	public String itemPrice;
+	public String itemStock;
+}

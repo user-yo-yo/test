@@ -1,0 +1,8 @@
+package jp.co.internous.action;
+
+public class Zatsu {
+	int num;
+
+	num = 10;
+	num = num + 8;
+}

@@ -1,0 +1,21 @@
+package jp.co.internous.action;
+
+public class Main {
+	public static void main(String[] args){
+		System.out.println("hello World");
+		System.out.println(gokei());
+//		①参照
+		int total = sum();
+		System.out.println(total);
+//		②参照
+	}
+	public static int gokei(){
+		return 1+1;
+//		①returnの値(2)がSystem.out.println(gokei());のgokeiに入る
+	}
+	public static int sum(){
+		return 1+2;
+//		②totalという変数に代入させてもできる
+//		　returnの値がsumになり、つまりtotalにもなる。
+	}
+}

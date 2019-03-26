@@ -22,11 +22,46 @@ public class ItemListAction extends ActionSupport implements SessionAware{
 			return ERROR;
 		}
 		if(deleteFlg == null){
-			String item_info_transaction = session.get("itemName").toString();
-			itemList = iLDAO.getItemList(item_info_transaction);
+			String item_name = session.get("itemName").toString();
+			String item_price = session.get("itemPrice").toString();
+			String item_stock = session.get("itemStock").toString();
+
+			itemList = iLDAO.getItemList(item_name,item_price,item_stock);
 		}else if(deleteFlg.equals("1")){
 			delete();
 		}
-
+		String result = SUCCESS;
+		return result;
 	}
+	public void delete()throws SQLException{
+		String item_name = session.get("itemName").toString();
+		String item_price = session.get("itemPrice").toString();
+		String item_stock = session.get("itemStock").toString();
+
+		int res = iLDAO.itemListDelete(item_name,item_price,item_stock);
+
+		if(res>0){
+			itemList = null;
+			setMessage("All Delete");
+		}else if(res==0){
+			setMessage("削除失敗");
+		}
+	}
+	public String getMessage() {
+		return this.message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	@Override
+	public void setSession(Map<String, Object> session) {
+		this.session = session;
+	}
+	public ArrayList<ItemListDTO> getMyPageList(){
+		return this.itemList;
+	}
+	public void setDeleteFlg(String deleteFlg) {
+		this.deleteFlg = deleteFlg;
+	}
+
 }

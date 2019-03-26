@@ -1,0 +1,54 @@
+package com.internousdev.ecsite2.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.internousdev.ecsite2.dto.ItemListDTO;
+import com.internousdev.ecsite2.util.DBConnector;
+
+public class ItemListDAO {
+	private DBConnector db = new DBConnector();
+	private Connection con = db.getConnection();
+
+	public ArrayList<ItemListDTO> getItemList(String item_name, String item_price, String item_stock)
+			throws SQLException {
+		ArrayList<ItemListDTO> iLDTO = new ArrayList<ItemListDTO>();
+		String sql = "SELECT iit.item_name,iit.item_price,iit.item_stock FROM item_info_transaction iit WHERE iit.item_name = ? AND iit.item_price = ? AND item_stock = ?";
+
+		try{
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setString(1,item_name);
+			ps.setString(2,item_price);
+			ps.setString(3,item_stock);
+
+			ResultSet rs = ps.executeQuery();
+
+			while(rs.next()){
+				ItemListDTO dto = new ItemListDTO();
+				dto.setItemName(rs.getString("item_name"));
+				dto.setItemPrice(rs.getString("item_price"));
+				dto.setItemStock(rs.getString("item_stock"));
+				iLDTO.add(dto);
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			con.close();
+		}
+		return iLDTO;
+	}
+	public int itemListDelete(String item_name, String item_price, String item_stock) throws SQLException{
+		String sql = "DELETE FROM item_info_transaction WHERE item_name = ? AND item_price = ? AND item_stock = ?";
+		PreparedStatement ps;
+		int result = 0;
+		try{
+			ps = con.prepareStatement(sql);
+			ps.setString(1,item_name);
+			ps.setString(2,item_price);
+			ps.setString(3,item_stock);
+		}
+	}
+}

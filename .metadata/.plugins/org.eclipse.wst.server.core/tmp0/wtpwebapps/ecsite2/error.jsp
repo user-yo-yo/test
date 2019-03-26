@@ -62,6 +62,6 @@ table {
 }
 </style>
 <body>
-	<h1>えらぁ</h1>
+	<h1>ERROR!</h1>
 </body>
 </html>

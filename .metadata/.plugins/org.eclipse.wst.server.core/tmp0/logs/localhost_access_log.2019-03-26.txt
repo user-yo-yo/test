@@ -1,0 +1,15 @@
+127.0.0.1 - - [26/Mar/2019:10:02:19 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:02:38 +0900] "GET /ecsite/ HTTP/1.1" 200 1693
+127.0.0.1 - - [26/Mar/2019:10:15:08 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:15:10 +0900] "GET /ecsite2/ HTTP/1.1" 200 2024
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:15:12 +0900] "POST /ecsite2/HomeAction.action;jsessionid=2D2B9D7731136B3B9FB67F7131AA95FB HTTP/1.1" 200 2185
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:15:18 +0900] "POST /ecsite2/LoginAction.action HTTP/1.1" 200 2186
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:15:43 +0900] "POST /ecsite2/LoginAction.action HTTP/1.1" 200 2772
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:15:45 +0900] "POST /ecsite2/BuyItemAction.action HTTP/1.1" 200 2486
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:15:47 +0900] "POST /ecsite2/BuyItemConfirmAction HTTP/1.1" 200 1555
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:15:50 +0900] "GET /ecsite2/MyPageAction.action HTTP/1.1" 200 2291
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:15:52 +0900] "GET /ecsite2/GoHomeAction.action HTTP/1.1" 200 2040
+127.0.0.1 - - [26/Mar/2019:10:35:29 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:35:32 +0900] "GET /ecsite2/buyItemComplete.jsp HTTP/1.1" 200 1564
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:36:28 +0900] "GET /ecsite2/home.jsp HTTP/1.1" 200 2047
+0:0:0:0:0:0:0:1 - - [26/Mar/2019:10:36:35 +0900] "POST /ecsite2/HomeAction.action HTTP/1.1" 200 2772

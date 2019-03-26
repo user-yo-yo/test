@@ -1,0 +1,37 @@
+package jp.co.internous.action;
+
+import jp.co.internous.action.Hukusuu.keisan;
+
+public class Hukusuu {
+	public static void main(String[] args){
+		System.out.println(h(10,10));
+		System.out.println(k(10,10));
+		System.out.println(w(10,10));
+
+		Keisan k = new Keisan();
+		Keisan value = k.keisan(a,b);
+	}
+
+//	public static int hikizan(int a,int b){
+//		return a-b;
+//	}
+//	public static int kakezan(int a,int b){
+//		return a*b;
+//	}
+//	public static int warizan(int a,int b){
+//		return a/b;
+//	}
+
+	class Keisan{
+		int h;
+		int k ;
+		int w;
+		 public Keisan keisan(int a,int b){
+			 Keisan k = new keisan();
+			 k.h = a-b;
+			 k.k = a*b;
+			 k.w = a/b;
+		 }
+	}
+
+}

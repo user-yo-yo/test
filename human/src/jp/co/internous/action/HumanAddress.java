@@ -1,11 +1,11 @@
 package jp.co.internous.action;
 
 public class HumanAddress {
-	
 	public String address;
+//	「private」String addressでもいい
 	public String getAddress(){
-		address="東京";
+		address = "TOKYO";
+
 		return address;
 	}
-
 }

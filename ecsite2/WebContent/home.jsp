@@ -77,7 +77,7 @@ table {
 			</s:form>
 			<s:if test="#session.id != null">
 				<p>
-					If you wanna logout <a href='<s:url action="LogoutAction" />'>click here</a>
+					ログアウトはこちら<a href='<s:url action="LogoutAction" />'>click here</a>
 				</p>
 			</s:if>
 			<s:form action="AdminAction">

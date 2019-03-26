@@ -1,0 +1,15 @@
+package jp.co.internous.action;
+
+public class Zatsu {
+	public static void main(String args[]) {
+		int num;
+		int mber;
+
+		num = 10;
+		System.out.println(num = num + 8);
+		System.out.println(num += 8);
+
+		mber = 10;
+		System.out.println(mber += 8);
+	}
+}
