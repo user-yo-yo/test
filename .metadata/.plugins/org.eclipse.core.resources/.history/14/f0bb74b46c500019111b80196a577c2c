@@ -1,0 +1,20 @@
+package jp.co.internous.action;
+
+class A {
+	public A(){
+	}
+	public A(String name){
+		System.out.println("やあ、" + name + "だ。");
+	}
+	public A(String name,String greeting){
+		System.out.println(greeting +"、" + name + "だ。");
+	}
+
+}
+
+public class Main{
+	public static void main(String args[]){
+		A mc1 = new A("ジョン");
+		A mc2 = new A("ポール","Hello");
+	}
+}

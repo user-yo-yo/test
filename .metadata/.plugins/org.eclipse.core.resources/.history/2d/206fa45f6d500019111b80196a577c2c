@@ -1,0 +1,24 @@
+package jp.co.internous.action;
+
+//public
+class MyClass {
+public MyClass() {
+
+    }
+
+    public MyClass(String name) {
+        System.out.println("こんにちは、" + name + "です");
+    }
+
+    public MyClass(String name, String greeting) {
+        System.out.println(greeting + "、" + name + "です");
+    }
+}
+
+public class Main {
+
+    public static void main(String args[]) {
+        MyClass mc1 = new MyClass("佐藤");
+        MyClass mc2 = new MyClass("山田", "はじめまして");
+    }
+}

@@ -1,6 +1,0 @@
-GitHub ƒRƒsƒy
-
-‡@cd Desktop\workspace\workspace_otake\test
-‡Agit add --all
-‡Bgit commit -m "ƒRƒƒ“ƒg"
-‡Cgit push

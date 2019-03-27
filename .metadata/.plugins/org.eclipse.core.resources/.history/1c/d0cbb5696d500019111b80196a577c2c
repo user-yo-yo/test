@@ -1,0 +1,9 @@
+package jp.co.internous.action;
+
+public class Tekitou {
+	public static void tekitou(String[] args){
+		int a ;
+		a=10;
+		System.out.println(a);
+	}
+}

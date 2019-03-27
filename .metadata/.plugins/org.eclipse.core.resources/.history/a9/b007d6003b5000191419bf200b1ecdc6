@@ -1,0 +1,16 @@
+package com.internousdev.webproj3.action;
+
+import com.internousdev.webproj3.dao.HSDAO;
+import com.internousdev.webproj3.dto.HSDTO;
+
+public class HelloStrutsAction {
+	private String result;
+
+	public String execute(){
+		String ret=ERROR;
+		HSDAO dao = new HSDAO();
+		HSDTO dto = new HSDTO();
+
+		dto = dao.select();
+	}
+}

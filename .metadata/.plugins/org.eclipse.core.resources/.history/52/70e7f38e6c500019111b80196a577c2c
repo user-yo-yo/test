@@ -1,0 +1,20 @@
+package jp.co.internous.action;
+
+public class Tekitou {
+	public a(){
+	}
+	public a(String name){
+		System.out.println("やあ、" + name + "だ。");
+	}
+	public a(String name,String greeting){
+		System.out.println(greeting +"、" + name + "だ。");
+	}
+
+}
+
+public class Main{
+	public static void main(String args[]){
+		a mc1 = new a("ジョン");
+		a mc2 = new a("ポール","Hello");
+	}
+}

@@ -1,0 +1,20 @@
+package com.internousdev.webproj3.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.internousdev.webproj3.dto.HSDTO;
+import com.internousdev.webproj3.util.DBConnector;
+
+public class HSDAO {
+	public HSDTO select(){
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+		HSDTO dto = new HSDTO();
+
+		String sql = "select*from u";
+		try{
+			PreparedStatement ps = con.prepareStatement(sql)
+		}
+	}
+}
