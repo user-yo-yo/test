@@ -1,3 +1,4 @@
+
 public class Phone {
 	public void play(){
 		System.out.println("再生");
@@ -11,7 +12,7 @@ public class Phone {
 	public void back(){
 		System.out.println("戻る");
 	}
-	public void call(){
+	public void cal(){
 		System.out.println("電話");
 	}
 	public void mail(){
