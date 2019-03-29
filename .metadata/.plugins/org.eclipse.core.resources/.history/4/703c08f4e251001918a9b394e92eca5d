@@ -1,0 +1,12 @@
+package fffffffffffffffffffffffffffff;
+
+public class StudentManager {
+	public static void main(String[] args){
+		Student s;
+		Student s1 = new Student();
+
+		System.out.println(Student.staID);
+		System.out.println(s1.staID);
+		System.out.println(s1);
+	}
+}

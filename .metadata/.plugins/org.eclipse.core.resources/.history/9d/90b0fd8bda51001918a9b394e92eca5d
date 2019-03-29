@@ -1,0 +1,8 @@
+package jp.co.internous.action;
+
+public class Student {
+	public int id;
+	public int getID(){
+		return this.id;
+	}
+}

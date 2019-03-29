@@ -1,0 +1,33 @@
+[参考]
+北ソフト工房
+http://www.kitako.tokyo/
+
+リストを扱う！Javaでarraylistを使う方法
+https://techacademy.jp/magazine/18607
+
+初心者におすすめバイブル！Java入門書籍10選
+https://www.sejuku.net/blog/1177
+
+【10分でわかる】Javaにおけるオブジェクト指向を徹底解説
+https://www.sejuku.net/blog/9788?cid=cvcv_3686
+
+Java入門
+https://www.javadrive.jp/start/
+
+parseint java
+https://www.google.com/search?q=parseint+java&oq=parseInt&aqs=chrome.1.69i57j0j69i65j0l3.1505j0j7&sourceid=chrome&ie=UTF-8
+
+ゆうきのせかい
+https://yuki.world/
+
+Struts 2入門（1）～基本形で理解する仕組みと構造～
+https://codezine.jp/article/detail/2296
+
+【Java入門】return文でメソッドの戻り値を使う(複数の戻り値も解説)
+https://www.sejuku.net/blog/22842
+
+インスタンスを利用する
+https://www.milk-island.net/document/java/kihon/h2/
+
+クラス名とメソッド名を取得する方法
+https://www.sejuku.net/blog/22263

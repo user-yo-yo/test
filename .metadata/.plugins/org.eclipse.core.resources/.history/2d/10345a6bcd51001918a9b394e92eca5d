@@ -1,0 +1,11 @@
+package jp.co.internous.action;
+
+public class StudentManager {
+	public static void main(String[] args){
+		Student s1 = new Student();
+		s1.id = 10;
+	}
+//	Student型のインスタンスを「s1」変数で生成。
+//	s1のインスタンス変数「id」に10を代入
+
+}

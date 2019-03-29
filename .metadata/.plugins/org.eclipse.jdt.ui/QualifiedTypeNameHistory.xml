@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.internousdev.ecsite2.action.LoginAction"/>
-<fullyQualifiedTypeName name="com.internousdev.ecsite2.dao.BuyItemDAO"/>
-<fullyQualifiedTypeName name="com.internousdev.ecsite2.dao.LoginDAO"/>
-<fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite2.dto.LoginDTO"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite2.dto.BuyItemDTO"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite2.dao.UserCreateCompleteDAO"/>
@@ -58,6 +54,10 @@
 <fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
 <fullyQualifiedTypeName name="jp.co.internous.action.Tekitou"/>
 <fullyQualifiedTypeName name="Mp3Player"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="SmartPhone"/>
+<fullyQualifiedTypeName name="NewFunction"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Person"/>
+<fullyQualifiedTypeName name="jp.co.internous.action.Student"/>
+<fullyQualifiedTypeName name="fffffffffffffffffffffffffffff.Student"/>
 </qualifiedTypeNameHistroy>

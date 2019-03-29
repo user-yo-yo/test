@@ -11,7 +11,9 @@
 <launchConfiguration bookmark="false" name="HelloWorld"/>
 <launchConfiguration bookmark="false" name="HelloWorld (1)"/>
 <launchConfiguration bookmark="false" name="HelloWorld (2)"/>
+<launchConfiguration bookmark="false" name="Hensuudane"/>
 <launchConfiguration bookmark="false" name="HikakuAction"/>
+<launchConfiguration bookmark="false" name="Hukusuu"/>
 <launchConfiguration bookmark="false" name="Human"/>
 <launchConfiguration bookmark="false" name="Human (1)"/>
 <launchConfiguration bookmark="false" name="Iphone"/>
@@ -19,8 +21,12 @@
 <launchConfiguration bookmark="false" name="ListSmaple"/>
 <launchConfiguration bookmark="false" name="Main"/>
 <launchConfiguration bookmark="false" name="Main (1)"/>
+<launchConfiguration bookmark="false" name="Main (2)"/>
 <launchConfiguration bookmark="false" name="MapSample"/>
 <launchConfiguration bookmark="false" name="SetSample"/>
+<launchConfiguration bookmark="false" name="StudentManager"/>
+<launchConfiguration bookmark="false" name="StudentManager (1)"/>
+<launchConfiguration bookmark="false" name="Tekitou"/>
 <launchConfiguration bookmark="false" name="Test"/>
 <launchConfiguration bookmark="false" name="Test (1)"/>
 <launchConfiguration bookmark="false" name="Test (2)"/>
@@ -28,7 +34,8 @@
 <launchConfiguration bookmark="false" name="TryBun"/>
 <launchConfiguration bookmark="false" name="WebProject2 (1)"/>
 <launchConfiguration bookmark="false" name="WrapperAction"/>
-<launchConfiguration bookmark="false" name="_home.jsp"/>
+<launchConfiguration bookmark="false" name="Zatsu"/>
+<launchConfiguration bookmark="false" name="dddd"/>
 <launchConfiguration bookmark="false" name="ローカル・ホスト の Tomcat8 (Java8)"/>
 </category>
 </runner>

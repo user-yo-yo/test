@@ -1,0 +1,27 @@
+package jp.co.internous.action;
+
+public class staticnitsuite{
+
+	class StaticFieldSample4{
+		int instanceField = 1; // ← インスタンスフィールド
+		static int staticField = 2; // ← staticフィールド
+
+		void method() {
+			System.out.println(staticField); // → 2、同じクラスの中からなのでstaticフィールドを直接参照できる
+		}
+	}
+	class StaticFieldSample5 {
+		public void  main(String[] args) {
+			StaticFieldSample4 sample1 = new StaticFieldSample4(); // インスタンスを生成し、sample1という変数でインスタンスへの参照を確保
+			System.out.println(sample1.instanceField); // → 1
+
+			StaticFieldSample4 sample2 = new StaticFieldSample4(); // 別のインスタンスを生成し、sample2という変数でインスタンスへの参照を確保
+			sample2.instanceField = 100; // sample2が指すインスタンスのインスタンスフィールドの値を変更
+			System.out.println(sample1.instanceField); // → 1、sample1が指すインスタンスのインスタンスフィールドは変わらず1のまま
+			System.out.println(sample2.instanceField); // → 100
+
+			System.out.println(StaticFieldSample4.instanceField); // コンパイルエラー!! インスタンスフィールドはインスタンスを生成しないと使えない
+			System.out.println(StaticFieldSample4.staticField); // → 2、staticフィールドはクラス経由で直接参照できる
+		}
+	}
+}
