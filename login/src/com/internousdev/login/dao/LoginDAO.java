@@ -19,6 +19,7 @@ public class LoginDAO {
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1,name);
+//			select文の?に入れる
 			ps.setString(2,password);
 
 			ResultSet rs = ps.executeQuery();
