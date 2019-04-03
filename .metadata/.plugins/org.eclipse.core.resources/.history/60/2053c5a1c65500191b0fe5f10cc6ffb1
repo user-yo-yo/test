@@ -15,6 +15,6 @@ public class StudentManager {
 		System.out.println(s1.staID);
 		System.out.println(s1.insID);
 		System.out.println(s1.staID);
-
+		System.out.println(s1.insID);
 	}
 }

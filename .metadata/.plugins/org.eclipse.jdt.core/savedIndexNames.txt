@@ -49,7 +49,6 @@ INDEX VERSION 1.127+C:\Users\internousdev\Desktop\workspace\workspace-otake\test
 3099414151.index
 2795787554.index
 2742525635.index
-3413239039.index
 2396163848.index
 3014424452.index
 3944429942.index
