@@ -1,0 +1,13 @@
+package memodesu.com;
+
+public class CreateUserAction {
+	private String userId;
+	private String password;
+	private String familyName;
+	private String firstName;
+	private String familyNameKana;
+	private String firstNameKana;
+	private String mail;
+	public Map<String,Object> session;
+	private String errorMessage;
+}

@@ -1,0 +1,28 @@
+package memodesu.com;
+
+import java.util.Map;
+
+public class CreateUserAction {
+	private String userId;
+	private String password;
+	private String familyName;
+	private String firstName;
+	private String familyNameKana;
+	private String firstNameKana;
+	private String mail;
+	public Map<String,Object> session;
+	private String errorMessage;
+
+	if(!(userID.equals(""))
+		&&!(password.equals(""))
+			){
+		session.put("userId",userId);
+		session.put("password",password);
+		session.put("familyName",familyName);
+		session.put("firstName",firstName);
+		session.put("familyNameKana",familyNameKana);
+		session.put("firstNameKana",firstNameKana);
+		session.put("mail",mail);
+		session.put("userId",userId);
+	}
+}

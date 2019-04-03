@@ -1,0 +1,12 @@
+package memodesu.com;
+
+public class UserInfoDTO {
+	private String userId;
+	private String password;
+	private String familyName;
+	private String firstName;
+	private String familyNameKana;
+	private String firstNameKana;
+	private String mail;
+	private String errorMessage;
+}

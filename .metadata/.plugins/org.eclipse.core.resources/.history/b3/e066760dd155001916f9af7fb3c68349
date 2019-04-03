@@ -1,0 +1,41 @@
+package memodesu.com;
+
+import java.util.Map;
+
+public class CreateUserAction {
+	private String userId;
+	private String password;
+	private String familyName;
+	private String firstName;
+	private String familyNameKana;
+	private String firstNameKana;
+	private String mail;
+	public Map<String,Object> session;
+	private String errorMessage;
+
+	public String execute(){
+		String result = SUCCESS;
+
+	if(!(userId.equals(""))
+		&&!(password.equals(""))
+		&&!(familyName.equals(""))
+		&&!(firstName.equals(""))
+		&&!(familyNameKana.equals(""))
+		&&!(firstNameKana.equals(""))
+		&&!(mail.equals("")))
+		{
+		session.put("userId",userId);
+		session.put("password",password);
+		session.put("familyName",familyName);
+		session.put("firstName",firstName);
+		session.put("familyNameKana",familyNameKana);
+		session.put("firstNameKana",firstNameKana);
+		session.put("mail",mail);
+	}else if(){
+
+	}else{
+
+	}
+	return result;
+	}
+}

@@ -1,0 +1,30 @@
+package memodesu.com;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class UserInfoDAO {
+	private Connection con;
+
+	private String sql = "INSERT INTO user_info(user_id,password,family_name,first_name,family_name_kana,first_name_kana,sex,email,regist_date,upfate_date VALUES(?,?,?,?,?,?,?,?,?,?))";
+
+	public void createUser(String userId,String password,String familyName,String firstName,String familyNameKana,String firstNameKana,String mail) throws SQLException{
+		try{
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setString(1,userId);
+			ps.setString(2,password);
+			ps.setString(3,familyName);
+			ps.setString(4,firstName);
+			ps.setString(5,familyNameKana);
+			ps.setString(6,firstNameKana);
+			ps.setString(7,mail);
+
+			ps.execute();
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			con.close();
+		}
+	}
+}

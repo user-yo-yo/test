@@ -1,0 +1,47 @@
+package memodesu.com;
+
+import java.util.Map;
+
+public class CreateUserAction {
+	private String userId;
+	private String password;
+	private String familyName;
+	private String firstName;
+	private String familyNameKana;
+	private String firstNameKana;
+	private String mail;
+	public Map<String,Object> session;
+	private String errorMessage;
+
+	public String execute(){
+		String result = SUCCESS;
+
+//		入力フォームに入力された値のチェック
+	if(!(userId.equals(""))
+		&&!(password.equals(""))
+		&&!(familyName.equals(""))
+		&&!(firstName.equals(""))
+		&&!(familyNameKana.equals(""))
+		&&!(firstNameKana.equals(""))
+		&&!(mail.equals("")))
+		{
+		session.put("userId",userId);
+		session.put("password",password);
+		session.put("familyName",familyName);
+		session.put("firstName",firstName);
+		session.put("familyNameKana",familyNameKana);
+		session.put("firstNameKana",firstNameKana);
+		session.put("mail",mail);
+//		入力された値が存在していない、入力に不備が無ければ「ユーザー入力確認画面」へ遷移
+
+	}else if(userId.equals("aaa")){
+		System.out.println(errorMessage);
+
+//		入力した値が既に存在していた(既にユーザーが存在していた)場合、メッセージとともに「ユーザー情報入力画面」へ遷移
+	}else{
+
+//		入力不備の場合、メッセージとともに「ユーザー情報入力画面」へ遷移
+	}
+	return result;
+	}
+}
