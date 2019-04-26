@@ -1,0 +1,14 @@
+package jp.co.internous.action;
+
+public class TryBun {
+	public static void main(String[] args) {
+		int i = 10;
+        int j = 3;
+
+        float result = i / j;
+        int result2 = i/j;
+
+        System.out.println("result = " + result);
+        System.out.println("result = " + result2);
+	  }
+}

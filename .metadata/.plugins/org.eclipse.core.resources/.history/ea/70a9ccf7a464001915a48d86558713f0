@@ -1,0 +1,9 @@
+package jp.co.internous.action;
+
+public class TryBun {
+	public static void main(String[] args) {
+	    long l = 50;
+	    int i = (int)l;
+	    System.out.println(1+i);
+	  }
+}

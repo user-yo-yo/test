@@ -1,0 +1,44 @@
+package main;
+
+public class Na{
+	public static void main(String[] args){
+		int a[][] = new int [][] { { 1, 2 }, { 2, 3, 4, } };
+		int total = 0;
+
+		public String A {
+			for (int i = 0; i < a.length; i++) {
+				for (int j = 0; j < a[i].length; j++) {
+					total += a[i][j];
+					System.out.println(total);
+				}
+			}
+		}
+
+		public static void B(String[] args) {
+			for (int i = 0; i < a.length; i++) {
+				for (int j = 0; j < a[j].length; j++) {
+					total += a[i][j];
+					System.out.println(total);
+				}
+			}
+		}
+
+		public static void C(String[] args) {
+			for (int i = 0; i < a.length; i++) {
+				for (int j = i; j < a[i].length; j++) {
+					total += a[i][j];
+					System.out.println(total);
+				}
+			}
+		}
+
+		public static void D(String[] args) {
+			for (int i = 0; i < a.length; i++) {
+				for (int j = i; j < a[j].length; j++) {
+					total += a[i][j];
+					System.out.println(total);
+				}
+			}
+		}
+	}
+}

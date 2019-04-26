@@ -1,0 +1,10 @@
+package main;
+
+public class Na{
+	public static void main(String[] args){
+		String[][]a = {{"a","s","e"}};
+		for(String o : a){
+			System.out.println(o);
+		}
+	}
+}

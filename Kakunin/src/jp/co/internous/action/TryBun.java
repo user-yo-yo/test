@@ -1,23 +1,43 @@
 package jp.co.internous.action;
 
 public class TryBun {
-	public static void main(String args[]){
-	    int n[] = {18, 29, 36};
+	public static void main(String[] args) {
+		int i = 10;
+        int j = 3;
 
-	    System.out.println("開始します");
+        float result = i / j;
+        float result2 = (float)i / (float)j;
+        int result3 = i/j;
 
-	    try{
-	      for (int i = 0; i < 4; i++)
-//	    	 ↑例外の有無を調べる文↑
-	      {
-	        System.out.println(n[i]);
-	      }
-	    }
-	    catch(ArrayIndexOutOfBoundsException e){
-//	 	↑for文で指定した範囲を超えてるよってこと↑
-	      System.out.println("配列の範囲を超えています");
-	    }
+        System.out.println("result = " + result);
+        System.out.println("result = " + result2);
+        System.out.println("result = " + result3);
 
-	    System.out.println("終了しました");
-	  }
+        byte a = (byte) 0b10000000;
+        System.out.println(a);
+
+        int c = (int) 6L;
+//      int c =  6L;  (int型にlong型を入れようとしているのでコンパイルエラー)
+
+        int h = 10;
+        System.out.println(h++);
+        System.out.println(h);
+        System.out.println(h);
+
+        String A = "s";
+        String B = "s";
+        System.out.println(A==B);
+        System.out.println(A.equals(B));
+
+        String Q = "s";
+        String W = "ss";
+        System.out.println(Q==W);
+        System.out.println(Q.equals(W));
+
+            int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};//[1]
+            for (int index = 0; index < numbers.length; index ++) {//[2]
+                System.out.println("[3] number = " + numbers[index]);
+            }
+        }
+
 }

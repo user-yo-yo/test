@@ -1,0 +1,14 @@
+package main;
+
+public class Na{
+	public static void main(String[] args){
+		int a[][] = new int [][] { { 1, 2 }, { 2, 3, 4, } };
+		int total = 0;
+
+		System.out.println(A);
+		System.out.println(B);
+		System.out.println(C);
+		System.out.println(D);
+
+	}
+}

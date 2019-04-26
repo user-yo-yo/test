@@ -1,0 +1,7 @@
+package main;
+
+public class Ma extends Na{
+	public static void main(String[] args) {
+
+		}
+	}

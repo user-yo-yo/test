@@ -1,0 +1,8 @@
+package jp.co.internous.action;
+
+public class TryBun {
+	public static void main(String args[]){
+		int a = 5______2;
+		System.out.println(a);
+	    }
+}

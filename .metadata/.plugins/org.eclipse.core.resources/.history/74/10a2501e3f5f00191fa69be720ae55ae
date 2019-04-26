@@ -1,0 +1,23 @@
+package jp.co.internous.action;
+
+public class TryBun {
+	public static void main(String args[]){
+	    int n[] = {18, 29, 36};
+
+	    System.out.println("開始します");
+
+	    try{
+	      for (int i = 0; i < 4; i++)
+//	    	 ↑例外の有無を調べる文↑
+	      {
+	        System.out.println(n[i]);
+	      }
+	    }
+	    catch(ArrayIndexOutOfBoundsException e){
+//	 	↑for文で指定した範囲を超えてるよってこと↑
+	      System.out.println("配列の範囲を超えています");
+	    }
+
+	    System.out.println("終了しました");
+	  }
+}

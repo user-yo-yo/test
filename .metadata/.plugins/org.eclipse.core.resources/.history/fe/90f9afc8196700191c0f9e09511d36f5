@@ -1,0 +1,25 @@
+package main;
+
+class ClassSample {
+	private static int val = 0;
+
+	public ClassSample(int val) {
+		ClassSample.val += val;
+	}
+
+	// 変数の値を表示
+	public void print() {
+		System.out.println("val = " + val);
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		for (int i = 0; i < 3; i++) {
+			ClassSample cs = new ClassSample(1);
+			cs.print();
+		}
+	}
+
+}

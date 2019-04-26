@@ -1,0 +1,22 @@
+package jp.co.internous.action;
+
+public class TryBun {
+	public static void main(String[] args) {
+		int i = 10;
+        int j = 3;
+
+        float result = i / j;
+        float result2 = (float)i / (float)j;
+        int result3 = i/j;
+
+        System.out.println("result = " + result);
+        System.out.println("result = " + result2);
+        System.out.println("result = " + result3);
+
+        byte a = (byte) 0b10000000;
+        System.out.println(a);
+
+        int c = (int) 6L;
+//      int c =  6L;  (int型にlong型を入れようとしているのでコンパイルエラー)
+	  }
+}

@@ -1,0 +1,13 @@
+package jp.co.internous.action;
+
+public class TryBun {
+	public static void main(String args[]){
+
+	    for(int i=0;i<5;i++){
+	    	for(int w=0;w<5;w++){
+	    		System.out.println("w");
+	    	}
+	    	System.out.print("s");
+	    }
+}
+}

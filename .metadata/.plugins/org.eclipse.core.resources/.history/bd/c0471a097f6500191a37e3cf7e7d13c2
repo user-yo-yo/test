@@ -1,0 +1,12 @@
+package jp.co.internous.action;
+
+public class HumanName {
+	int total = 0;
+	int number[] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+	{
+		for (int score : number) {
+			total += score;
+		}
+		System.out.println("合計=" + total);
+	}
+}

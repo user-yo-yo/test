@@ -1,0 +1,64 @@
+package main;
+
+public class Main {
+	public static void main(String[] args) {
+		A;
+
+
+
+
+	private static void A(String[] args) {
+		int a[][] = new int[][] { { 1, 2 }, { 2, 3, 4, } };
+
+		int total = 0;
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				total += a[i][j];
+				System.out.println(total);
+			}
+		}
+
+	}
+
+	public static void B(String[] args) {
+		int a[][] = new int[][] { { 1, 2 }, { 2, 3, 4, } };
+
+		int total = 0;
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[j].length; j++) {
+				total += a[i][j];
+				System.out.println(total);
+			}
+		}
+
+	}
+
+	public static void C(String[] args) {
+		int a[][] = new int[][] { { 1, 2 }, { 2, 3, 4, } };
+
+		int total = 0;
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = i; j < a[i].length; j++) {
+				total += a[i][j];
+				System.out.println(total);
+			}
+		}
+	}
+
+	public static void D(String[] args) {
+		int a[][] = new int[][] { { 1, 2 }, { 2, 3, 4, } };
+
+		int total = 0;
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = i; j < a[j].length; j++) {
+				total += a[i][j];
+				System.out.println(total);
+			}
+		}
+	}
+	}
+}

@@ -1,0 +1,12 @@
+package main;
+
+public class Na {
+	public static void main(String[] args){
+		int a[][] = new int [][] { { 1, 2 }, { 2, 3, 4, } };
+		int total = 0;
+
+		private static void A(){
+
+		}
+	}
+}

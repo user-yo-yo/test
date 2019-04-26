@@ -1,0 +1,16 @@
+package fffffffffffffffffffffffffffff;
+
+public class Main {
+	public static void main(String[] args){
+		int q = 1;
+		int w = 1;
+
+		int a[][] = new int[][]{{q ,2},{w,4,5}};
+
+		int total = 0;
+
+		total += a[q][w];
+		System.out.println(total);
+
+	}
+}

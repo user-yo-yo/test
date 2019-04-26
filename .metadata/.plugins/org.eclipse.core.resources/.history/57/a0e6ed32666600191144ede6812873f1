@@ -1,0 +1,11 @@
+package main;
+
+public class Ma extends Na{
+	public static void main(String[] args) {
+		int n = 0;
+			if(n<0) return;
+			System.out.println("a");
+			return;
+			System.out.println("b");
+		}
+	}

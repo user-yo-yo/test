@@ -1,0 +1,15 @@
+package jp.co.internous.action;
+
+public class TryBun {
+	public static void main(String args[]){
+		int a = 5______2;
+		System.out.println(a);
+
+		char s = '\u30A2';
+		System.out.println(s);
+		char d = '\u30A3';
+		System.out.println(d);
+		char f = '\u30A4';
+		System.out.println(f);
+	    }
+}
